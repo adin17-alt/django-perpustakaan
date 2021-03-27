@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>PERPUSTAKAAN</h1>
+<h2>Judul :</h2>
+{% for judul in title%}
+    <li>{{judul}}</li>
+{%endfor%}
+<h2>Penulis</h2>
+{{penulis | upper}}
+
+{% endblock %}
